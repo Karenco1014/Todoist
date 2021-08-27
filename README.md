@@ -26,13 +26,14 @@ Clone the repo into your local machine:
 
 
 
-#HTTP Verbs
+#  HTTP Verbs
 
-| HTTP METHOD  | POST  |GET   | PUT  |DELETE
+| HTTP METHOD  | POST  | GET   |  PUT  | DELETE  |
 | ------------ | ------------ | ------------ | ------------ |
-| CRUD OP  | CREATE   | READ  | UPDATE  |DELETE
-|  /tasks |  Create new tasks |  List tasks |  Bulk update |Delete all tasks
-| /tasks/1234  |  Error |  Show task1 | If exists, update task1; If not, error   |Delete task1
+| CRUD OP  | CREATE   | READ  | UPDATE  | DELETE
+|  /tasks |  Create new tasks |  List tasks |  Bulk update | Delete all tasks
+| /tasks/1234  |  Error |  Show task1 | If exists, update task1; If not, error | Delete task1
+
 
 
 

@@ -39,10 +39,11 @@ jobs:
     - name: Run the API and Postman's tests
       run: |
         newman run ./Todoist/Tests/Backend/collections/Todoist_postman_collection.json' -e ./Todoist/Tests/Backend/envVariables/Todoist_postman_environment.json -r htmlextra --reporter-htmlextra-export ./Todoist/Tests/Backend/reports/reporteTodoistApi.html
-   
-artifacts:
-      when: always
-      paths:
-        reporteTodoistApi.html
+     
+    - name: Upload math result for job 
+        uses: actions/upload-artifact@v2
+        with:
+          name: Upload reporte
+          path: reporteTodoistApi.html
 
            

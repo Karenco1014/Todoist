@@ -40,11 +40,13 @@ jobs:
       run: |
         newman run ./Todoist/Tests/Backend/collections/Todoist_postman_collection.json' -e ./Todoist/Tests/Backend/envVariables/Todoist_postman_environment.json -r htmlextra --reporter-htmlextra-export ./Todoist/Tests/Backend/reports/reporteTodoistApi.html
        
-    # Output the run Details
-  Artifacts:  
-         when: always
-         paths: 
-            - reporteTodoistApi.html
+  # Upload the contents of Test Results directory to workspace
+    - name: Output the run Details
+      uses: actions/upload-artifact@v2
+      with: 
+       name: save reports
+       path: reporteTodoistApi
+     
 
 
            

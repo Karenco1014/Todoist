@@ -43,7 +43,8 @@ jobs:
     # Output the run Details
   Artifacts:  
          when: always
-         paths: reporteTodoistApi.html
+         paths: 
+            - reporteTodoistApi.html
 
 
            

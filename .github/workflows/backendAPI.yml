@@ -39,6 +39,9 @@ jobs:
     - name: Run the API and Postman's tests
       run: |
         newman run ./Todoist/Tests/Backend/collections/Todoist_postman_collection.json' -e ./Todoist/Tests/Backend/envVariables/Todoist_postman_environment.json -r htmlextra --reporter-htmlextra-export ./Todoist/Tests/Backend/reports/reporteTodoistApi.html
-
+   
+  artifacts:
+  paths:
+      - reporteTodoistApi.html
 
            

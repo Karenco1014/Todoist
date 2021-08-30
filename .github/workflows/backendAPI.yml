@@ -28,16 +28,16 @@ jobs:
       # install Node JS dependency
       - name: Install Node JS
       uses: actions/setup-node@v1
-      with:
+      with: 
         node-version: '16.x'
-
+        
       # Runs a set of commands using the runners shell
       - name: Install Newman dependency
       run: npm install -g newman
            npm install -g newman-reporter-htmlextra
 
       - name: Run the API and Postman's tests
-        run: |
+      run: |
         newman run ./Todoist/Tests/Backend/collections/Todoist_postman_collection.json' -e ./Todoist/Tests/Backend/envVariables/Todoist_postman_environment.json -r htmlextra --reporter-htmlextra-export ./Todoist/Tests/Backend/reports/reporteTodoistApi.html
        
     # Output the run Details

@@ -52,7 +52,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: test-coverage-report
-        path: Backend/reports/reporteTodoistApi.html
+        path: Tests/Backend/reports/reporteTodoistApi.html
 
 
            

@@ -41,10 +41,9 @@ jobs:
   # Make directory to upload the test results
     - name: Make Directory for results
       run: mkdir -p reporteTodoistApi
-           echo hello > reporteTodoistApi.html
 
     - name: save new result 
       uses: actions/upload-artifact@v2
       with:
-      name: my-artifact
-      path: reporteTodoistApi.html
+       name: my-artifact
+       path: reporteTodoistApi.html

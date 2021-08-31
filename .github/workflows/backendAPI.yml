@@ -37,18 +37,4 @@ jobs:
            npm install -g newman-reporter-htmlextra
 
     - name: Run the API and Postman's tests
-      run: |
-       npm run test
-
-   -  name: upload Directory for results
-      run: mkdir -p reporteTodoistApi
-           echo hello > reporteTodoistApi.html
-     
-    - name: save new result 
-      uses: actions/upload-artifact@v2
-        with:
-      name: my-artifact
-      path: reporteTodoistApi.html
-
-
-           
+      run: npm run test

@@ -45,6 +45,6 @@ jobs:
 
     - name: save new result 
       uses: actions/upload-artifact@v2
-        with:
+      with:
       name: my-artifact
       path: reporteTodoistApi.html

@@ -40,10 +40,19 @@ jobs:
       run: |
        newman run ./Todoist/Tests/Backend/collections/Todoist_postman_collection.json' -e ./Todoist/Tests/Backend/envVariables/Todoist_postman_environment.json -r htmlextra --reporter-htmlextra-export ./Todoist/Tests/Backend/reports/reporteTodoistApi.html
      
-    - name: Upload math result for job 
-      uses: actions/upload-artifact@v2
-      with:
-        name: Upload reporte
-        path: reporteTodoistApi
+    - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist-without-markdown
+          path: |
+            Todoist
+            !Todoist/**/*.md
+
+    - name: Archive coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-coverage-report
+          path: Backend/reports/reporteTodoistApi.html
+
 
            

@@ -45,8 +45,8 @@ jobs:
       with:
         name: dist-without-markdown
         path: |
-        Todoist
-        !Todoist/**/*.md
+          Todoist
+          !Todoist/**/*.md
 
     - name: Archive coverage results
       uses: actions/upload-artifact@v2

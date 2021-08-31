@@ -37,3 +37,7 @@ jobs:
 
     - name: Run the API and Postman's tests
       run: npm run test
+
+    artifacts:
+      when: always
+      paths: reporteTodoistApi.html

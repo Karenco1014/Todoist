@@ -41,7 +41,7 @@ jobs:
   # Make directory to upload the test results
     - name: Make Directory for results
       run: mkdir -p reporteTodoistApi
-      run: echo hello > reporteTodoistApi.html
+           echo hello > reporteTodoistApi.html
 
     - name: save new result 
       uses: actions/upload-artifact@v2

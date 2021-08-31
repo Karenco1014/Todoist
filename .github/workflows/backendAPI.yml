@@ -33,8 +33,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
     - name: Install Newman dependency
-      run: npm install -g newman
-           npm install -g newman-reporter-htmlextra
+      run: npm install
 
     - name: Run the API and Postman's tests
       run: npm run test

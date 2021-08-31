@@ -38,6 +38,13 @@ jobs:
     - name: Run the API and Postman's tests
       run: npm run test
 
-    artifacts:
-      when: always
-      paths: reporteTodoistApi.html
+  # Make directory to upload the test results
+    - name: Make Directory for results
+      run: mkdir -p reporteTodoistApi
+      run: echo hello > reporteTodoistApi.html
+
+    - name: save new result 
+      uses: actions/upload-artifact@v2
+        with:
+      name: my-artifact
+      path: reporteTodoistApi.html

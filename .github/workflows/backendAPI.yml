@@ -38,7 +38,7 @@ jobs:
 
       # Make directory to upload the test results
     - name: Make Directory for results
-      run: mkdir -p reporteTodoistApi
+      run: mkdir -p reports
 
     - name: Run the API and Postman's tests
       run: npm run test
@@ -47,4 +47,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
        name: my-artifact
-       path: reporteTodoistApi.html
+       path: reports

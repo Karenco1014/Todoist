@@ -4,7 +4,7 @@
   "description": "Api todoist automation",
   "main": "index.js",
   "scripts": {
-    "test": "newman run './Backend/collections/Todoist_postman_collection.json' -e './Backend/envVariables/Todoist_postman_environment.json' -r htmlextra --reporter-htmlextra-export './Backend/reports/reporteTodoistApi.html'"
+    "test": "newman run './Backend/collections/Todoist_postman_collection.json' -e './Backend/envVariables/Todoist_postman_environment.json' -r htmlextra --reporter-htmlextra-export reports/reporteTodoistApi.html --reporter-htmlextra-darkTheme  > reports/reporteTodoistApi.html"
   },
   "author": "Karen",
   "license": "ISC",

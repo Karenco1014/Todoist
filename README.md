@@ -6,9 +6,9 @@ Todoist is the productivity tool you need to get work and life organized. Collec
 ## Goals
 This repository has to goal, fulfill the next points:
 
-- Get your authorization token and save it as an environment variable
+- Get your authorization token and save it as an environment variable.
 - Create a new folder inside your collection for projects and another one for tasks.
-- Create the following endpoints and its corresponding Tests: status codes, content, response time
+- Create the following endpoints and its corresponding Tests: status codes, content, response time.
 
 ## Installation:
 what will you need to run this repository:
